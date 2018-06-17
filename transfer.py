@@ -355,10 +355,6 @@ UNKNOWN_TAG = ("<UNK>", 0)
 EOS_TAG = ("<EOS>", 1)
 
 if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) > 0:
-        TRAIN = bool(sys.argv[0])
     if TRAIN:
         start()
     else:
