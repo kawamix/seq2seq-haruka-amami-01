@@ -1,0 +1,17 @@
+encdec:
+  epoch: 5
+  lstm_layers: 2
+  dropout: 0.2
+  batch: 64
+  embed: 512
+  hidden: 1024
+  pre_model: pre_train.model
+  style_model: style_train.model
+  max_vocab_size: 25000
+  replaced_vocab_size: 2000
+pre_train_file:
+  q: ./resources/input.txt
+  a: ./resources/output.txt
+style_train_file: ./resources/haruka.txt
+tmp_dir: ./tmp/
+neologd_dic_path: /hogehoge/mecab-ipadic-neologd
